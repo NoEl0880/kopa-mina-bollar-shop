@@ -100,15 +100,13 @@ const SpecialBallCard = ({ ball }: { ball: typeof specialBalls[0] }) => {
         </div>
       </CardContent>
       <CardFooter>
-        {ball.category !== "bonus" ? (
-          <Button className="w-full bg-kmb-green hover:bg-kmb-light-green">
-            Lägg i varukorgen
-          </Button>
-        ) : (
-          <Button variant="outline" className="w-full border-kmb-green text-kmb-green">
-            Gratis vid köp över 300 kr
-          </Button>
-        )}
+        <Button 
+          variant="outline" 
+          disabled
+          className="w-full border-kmb-green text-kmb-green"
+        >
+          Välj vid köp över 300 kr
+        </Button>
       </CardFooter>
     </Card>
   );
@@ -134,9 +132,22 @@ const Spex = () => {
                   <h3 className="text-xl font-bold mb-2">Få en gratis specialboll!</h3>
                   <p>Vid köp över 300 kr får du lägga till en valfri bonusboll i din varukorg helt gratis.</p>
                 </div>
-                <Button variant="outline" className="border-white text-white hover:bg-kmb-light-green">
-                  Se bonusbollar
+                <Button 
+                  variant="outline" 
+                  className="border-white text-white hover:bg-kmb-light-green"
+                  onClick={() => window.location.href = "/products"}
+                >
+                  Handla golftillbehör
                 </Button>
+              </div>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg mb-10 border border-kmb-sand">
+              <div className="text-center mb-6">
+                <h2 className="text-xl font-bold text-kmb-dark">Specialbollar kan endast väljas i kassan</h2>
+                <p className="text-kmb-dark/70 mt-2">
+                  Dessa specialbollar kan inte köpas separat utan väljs i kassan när du har varor för minst 300 kr i din varukorg.
+                </p>
               </div>
             </div>
             
