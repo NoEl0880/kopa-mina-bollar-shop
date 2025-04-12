@@ -25,7 +25,6 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-6">
           <Link to="/" className="text-kmb-green hover:text-kmb-light-green transition-colors">Hem</Link>
           <Link to="/products" className="text-kmb-green hover:text-kmb-light-green transition-colors">Produkter</Link>
-          <Link to="/spex" className="text-kmb-green hover:text-kmb-light-green transition-colors">Spex</Link>
           <Link to="/about" className="text-kmb-green hover:text-kmb-light-green transition-colors">Om oss</Link>
           <Link to="/contact" className="text-kmb-green hover:text-kmb-light-green transition-colors">Kontakt</Link>
         </nav>
@@ -64,13 +63,6 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Produkter
-            </Link>
-            <Link 
-              to="/spex" 
-              className="text-kmb-green hover:text-kmb-light-green transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Spex
             </Link>
             <Link 
               to="/about" 
