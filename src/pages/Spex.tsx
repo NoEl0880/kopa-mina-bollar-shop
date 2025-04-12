@@ -96,7 +96,7 @@ const SpecialBallCard = ({ ball }: { ball: typeof specialBalls[0] }) => {
       </CardHeader>
       <CardContent>
         <div className="text-2xl font-bold text-kmb-green">
-          {ball.price > 0 ? `${ball.price} kr` : "Gratis"}
+          {ball.category === "bonus" ? "Gratis" : `${ball.price} kr`}
         </div>
       </CardContent>
       <CardFooter>
@@ -132,7 +132,7 @@ const Spex = () => {
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-xl font-bold mb-2">Få en gratis specialboll!</h3>
-                  <p>Lägg till en valfri bonusboll i din varukorg när du handlar för över 300 kr.</p>
+                  <p>Vid köp över 300 kr får du lägga till en valfri bonusboll i din varukorg helt gratis.</p>
                 </div>
                 <Button variant="outline" className="border-white text-white hover:bg-kmb-light-green">
                   Se bonusbollar
