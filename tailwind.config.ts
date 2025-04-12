@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors based on the logo
+				kmb: {
+					'green': '#1E5631',
+					'light-green': '#5C8D3E',
+					'cream': '#F5F4E9',
+					'sand': '#E8E6D0',
+					'dark': '#292929',
 				}
 			},
 			borderRadius: {
