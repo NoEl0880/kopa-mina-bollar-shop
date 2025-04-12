@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Leaf, Recycling, PiggyBank } from "lucide-react";
+import { Leaf, PiggyBank, Recycle } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -38,7 +38,7 @@ const AboutSection = () => {
           
           <div className="bg-white p-6 rounded-lg shadow-sm border border-kmb-sand flex flex-col items-center text-center">
             <div className="bg-kmb-cream p-4 rounded-full mb-4">
-              <Recycling className="h-8 w-8 text-kmb-green" />
+              <Recycle className="h-8 w-8 text-kmb-green" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Noggrant sorterade</h3>
             <p className="text-kmb-dark/70">
